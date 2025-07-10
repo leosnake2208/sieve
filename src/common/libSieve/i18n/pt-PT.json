@@ -1,7 +1,7 @@
 {
-  "sidebar.actions": "Actions",
-  "sidebar.tests": "Tests",
-  "sidebar.operators": "Operators",
+  "sidebar.actions": "Ações",
+  "sidebar.tests": "Testes",
+  "sidebar.operators": "Usuários",
   "debug.tab.script": "Script",
   "debug.tab.capabilities": "Capabilities",
   "debug.tab.advanced": "Advanced",
