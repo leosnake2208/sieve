@@ -38,8 +38,8 @@ const WIN_ARCH = "x64";
 const WIN_PLATFORM = "win32";
 const LINUX_ARCH = "x64";
 const LINUX_PLATFORM = "linux";
-const MAC_ARCH = "x64";
-const MAC_PLATFORM = "mas";
+const MAC_ARCH = "arm64";
+const MAC_PLATFORM = "darwin";
 
 const APP_IMAGE_RELEASE_URL = "https://api.github.com/repos/AppImage/AppImageKit/releases";
 const APP_IMAGE_TOOL_NAME = "appimagetool-x86_64.AppImage";
