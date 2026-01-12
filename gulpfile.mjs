@@ -66,6 +66,18 @@ const appZipMacOS = gulp.series(
 );
 appZipMacOS.displayName = 'app:zip-macos';
 
+const appPackageMacOSx64 = gulp.series(
+  app.packageApp,
+  app.packageMacOSx64
+);
+appPackageMacOSx64.displayName = 'app:package-macos-x64';
+
+const appZipMacOSx64 = gulp.series(
+  appPackageMacOSx64,
+  app.zipMacOSx64
+);
+appZipMacOSx64.displayName = 'app:zip-macos-x64';
+
 app.watch.displayName = "app:watch";
 app.watch.description = "Watches the app's source files for changes";
 
@@ -76,7 +88,9 @@ export {
   appZipLinux,
   appAppImageLinux,
   appPackageMacOS,
-  appZipMacOS
+  appZipMacOS,
+  appPackageMacOSx64,
+  appZipMacOSx64
 };
 
 // Web Extensions Related Tasks...
